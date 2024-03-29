@@ -15,8 +15,8 @@ int32_t main()
     NEED_FOR_SPEED;
     vector<ll> factors;
     for(ll i = 1, p = 1; i <= 60; i++, p*=2){
-        for(ll j = 1, q = 1; p*q <= MAX; j++, q*=3){
-            for(ll k = 1, r = 1; p*q*r <= MAX; k++, r*=5){
+        for(ll q = 1; p*q <= MAX; q*=3){
+            for(ll r = 1; p*q*r <= MAX; r*=5){
                 factors.push_back(p*q*r);
             }
         }
