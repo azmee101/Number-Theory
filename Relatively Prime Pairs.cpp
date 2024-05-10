@@ -13,8 +13,8 @@ int32_t main()
     NEED_FOR_SPEED;
     ll l, r;
     cin >> l >> r;
-    printf("YES\n");
-    for(int i = l; i <= r; i+=2){
+    cout << "YES" << '\n';
+    for(ll i = l; i <= r; i+=2){
         cout << i << ' ' << i+1 << '\n';
     }
     return 0;
